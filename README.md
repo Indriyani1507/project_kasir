@@ -85,4 +85,50 @@ Proyek ini bertujuan untuk membuat sistem kasir supermarket dengan alur sebagai 
         * Menampilkan tabel yang berisi semua data pesanan.
     
        #test case dalam pengoperasian code**
-     
+     ## Test Case 1
+add item dan check 
+
+**Input:**<br />
+test case 1, menambahkan item belanja kedalam keranjang
+
+trsnct_123.add_item("Beras", 10, 15_000)
+
+trsnct_123.add_item("susu",10, 15_000)
+
+trsnct_123.add_item("gula", 7, 20_000)
+
+trsnct_123.check_keranjang()
+
+**Output:**<br />
+
+![image](https://github.com/Indriyani1507/project_kasir/blob/main/testing%201.jpeg)
+
+**Input:**<br />
+test case 2, mengubah nama belanja 
+
+trsnct_123.update_item_nama_belanja("susu", "kopi")
+
+trsnct_123.check_keranjang()
+
+**Output:**<br />
+
+![image](https://github.com/Indriyani1507/project_kasir/blob/main/testing%202.jpeg)
+**Input:**<br />
+##test case 3, mengubah/memperbarui nama belanja dengan string
+
+trsnct_123.update_item_nama_belanja("kopi", 15)
+
+trsnct_123.check_keranjang()
+**Output:**<br />
+
+![image](https://github.com/Indriyani1507/project_kasir/blob/main/testing%203.jpeg)
+
+**Input:**<br />
+test case 4, mengubah/memperbarui jumlah belanja
+
+trsnct_123.update_item_jumlah_belanja("gula", 9)
+
+trsnct_123.check_keranjang()
+
+**Output:**<br />
+![image](https://github.com/Indriyani1507/project_kasir/blob/main/testing%204.jpeg)
