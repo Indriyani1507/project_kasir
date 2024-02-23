@@ -9,10 +9,9 @@ Sehingga customer yang tidak berada di kota tersebut bisa membeli barang dari su
 1. Customer memasukkan nama belanja, jumlah belanja, harga belanja per item yang akan dibeli
 * Customer memasukkan nama item, jumlah item, harga per item yang 
    ingin dibeli
-2. Jika customer sudah selesai berbelanja, dengan ketentuan nama belanja, jumlah belanja, dan harga belanja yang diinput sudah benar.
-  Maka customer bisa melakukan check order.
+2. Jika customer sudah selesai berbelanja, dengan ketentuan nama belanja, jumlah belanja, dan harga belanja yang diinput sudah benar. Maka customer bisa melakukan check order.
    Menggunakan method check_keranjang()
-  dengan ketentuan :
+     dengan ketentuan :
 * Jika customer sudah selesai dengan belanjanya, apabila nama belanja, jumlah belanja, dan harga belanja yang diinput sudah benar.
 * Maka customer bisa melakukan check order. Menggunakan method check_keranjang()
 * 
@@ -87,11 +86,10 @@ Proyek ini bertujuan untuk membuat sistem kasir supermarket dengan alur sebagai 
         * Menampilkan tabel yang berisi semua data pesanan.
     
        #test case dalam pengoperasian code**
-     ## Test Case 1
-add item dan check 
+     ## Test Case 1 
 
 **Input:**<br />
-test case 1, menambahkan item belanja kedalam keranjang
+**menambahkan item belanja ke dalam keranjang**
 
 trsnct_123.add_item("Beras", 10, 15_000)
 
@@ -105,8 +103,10 @@ trsnct_123.check_keranjang()
 
 ![image](https://github.com/Indriyani1507/project_kasir/blob/main/testing%201.jpeg)
 
+ ## Test Case 2
+
 **Input:**<br />
-test case 2, mengubah nama belanja 
+**mengubah nama belanja** 
 
 trsnct_123.update_item_nama_belanja("susu", "kopi")
 
@@ -115,8 +115,10 @@ trsnct_123.check_keranjang()
 **Output:**<br />
 
 ![image](https://github.com/Indriyani1507/project_kasir/blob/main/testing%202.jpeg)
+
 **Input:**<br />
-##test case 3, mengubah/memperbarui nama belanja dengan string
+##  Test case 3
+**mengubah/memperbarui nama belanja dengan string**
 
 trsnct_123.update_item_nama_belanja("kopi", 15)
 
@@ -126,7 +128,8 @@ trsnct_123.check_keranjang()
 ![image](https://github.com/Indriyani1507/project_kasir/blob/main/testing%203.jpeg)
 
 **Input:**<br />
-test case 4, mengubah/memperbarui jumlah belanja
+## Test case 4
+**Mengubah/memperbarui jumlah belanja**
 
 trsnct_123.update_item_jumlah_belanja("gula", 9)
 
@@ -136,7 +139,9 @@ trsnct_123.check_keranjang()
 ![image](https://github.com/Indriyani1507/project_kasir/blob/main/testing%204.jpeg)
 
 **Input:**<br />
-test case 5, memperbarui jumlah belanja dengan menggunakan string
+
+## Test Case 5
+**memperbarui jumlah belanja dengan menggunakan string**
 
 trsnct_123.update_item_jumlah_belanja("gula", "roti")
 
@@ -144,8 +149,10 @@ trsnct_123.check_keranjang()
 **Output:**<br />
 ![image](https://github.com/Indriyani1507/project_kasir/blob/main/testing%205.jpeg)
 
+
 **Input:**<br />
-test case 6, memperbarui harga belanja
+## Test Case 6
+**Memperbarui/mengupdate harga belanja**
 
 trsnct_123.update_item_harga_belanja("gula", 30_000)
 
@@ -154,7 +161,8 @@ trsnct_123.check_keranjang()
 ![image](https://github.com/Indriyani1507/project_kasir/blob/main/testing%206.jpeg)
 
 **Input:**<br />
-test case 7, memperbarui harga belanja menggunakan string
+## Test Case 7
+**Memperbarui harga belanja menggunakan string**
 
 trsnct_123.update_item_harga_belanja("gula", "mie")
 
@@ -162,7 +170,8 @@ trsnct_123.check_keranjang()
 ![image](https://github.com/Indriyani1507/project_kasir/blob/main/testing%207.jpeg)
 
 **Input:**<br />
-test case ke 8, menyatakan apakah belanjaan akan mendapatkan diskon
+## Test case  8
+**Menyatakan apakah belanjaan akan mendapatkan diskon**
 
 trsnct_123.total_price()
 
