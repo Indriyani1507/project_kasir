@@ -24,61 +24,63 @@ Sehingga customer yang tidak berada di kota tersebut bisa membeli barang dari su
 
 6.  Jika customer ingin membatalkan transaksi maka bisa melakukan :
    
-   a). Menghapus daftar belanja dari nama belanja dengan method
-      `delete_item()`
+         a). Menghapus daftar belanja dari nama belanja dengan method : `delete_item()`
     
-   * Jika customer ingin menghapus semua daftar belanja maka bisa melakukan :
-        `self.keranjang.clear()`
+         b). Jika customer ingin menghapus semua daftar belanja maka dapat menggunakan : `self.keranjang.clear()`
 
-   b). Jika ingin menghapus semua transaksi maka dapat menggunakan 
-   * Jika ingin menghapus semua transaksi maka dapat menggunakan 
-       method
-      `reset_transaction()`
+         c). Jika ingin menghapus semua daftar belanja maka dapat menggunakan : `reset_transaction()`
 
-5. Setelah selesai melakukan pengecekan,customer dapat menghitung total belanja yang sudah dibeli. Dengan menggunakan method total_harga(). Pada supermarket ini terdapat ketentuan :
-   a). Jika total belanja customer diatas Rp 200.000 maka akan 
-* Setelah selesai melakukan pengecekan,customer dapat menghitung total belanja yang sudah dibeli. Dengan menggunakan method total_harga(). Pada supermarket ini terdapat 
-  ketentuan :
-   * Jika total belanja customer diatas Rp 200.000 maka akan 
-       mendapatkan diskon 5%
-   b). Jika total belanja customer diatas Rp 300.000 maka akan 
-   * Jika total belanja customer diatas Rp 300.000 maka akan 
-       mendapatkan diskon 8%
-   c). Jika total belanja customer diatas Rp 500.000 maka akan 
-   * Jika total belanja customer diatas Rp 500.000 maka akan 
-       mendapatkan diskon 10%
+5. Setelah selesai melakukan pengecekan, customer dapat menghitung total belanja yang sudah dibeli.
+    Dengan menggunakan method : `total_price()`.
+   
+   Pada supermarket Andi terdapat ketentuan :
+   
+      a).Jika total belanja lebih dari Rp 200.000 maka akan mendapatkan diskon 5%
+   
+      b). Jika total belanja lebih dari Rp 300.000 maka akan mendapatkan diskon 8%
+   
+      c). Jika total belanja lebih dari Rp 500.000 maka akan mendapatkan diskon 10%
 
 ## Objectif :
 Proyek ini bertujuan untuk membuat sistem kasir supermarket dengan alur sebagai berikut:
+
    a). Pelanggan memasukkan nama barang, jumlah barang, dan harga 
-   * Pelanggan memasukkan nama barang, jumlah barang, dan harga 
-       barang yang dibeli.
-   b). Jika terjadi kesalahan dalam memasukkan nama barang, jumlah 
+   
+   * Pelanggan memasukkan nama belanja, jumlah belanja, dan harga belanja yang dibeli.
+
+   b). Jika terjadi kesalahan dalam memasukkan nama barang, jumlah
+
    * Jika terjadi kesalahan dalam memasukkan nama barang, jumlah 
        barang, atau harga barang, pelanggan dapat mengubah atau 
        memperbarui barang tersebut:
-        * perbarui nama item
-        * perbarui jumlah item
-        * perbarui harga barang
-   c). Jika pelanggan membatalkan pembelian suatu barang, pelanggan 
-   * Jika pelanggan membatalkan pembelian suatu barang, pelanggan 
-       dapat menghapus barang tersebut:
+        * perbarui nama belanja
+        * perbarui jumlah belanja
+        * perbarui harga belanja
+          
+   c). Jika pelanggan membatalkan pembelian suatu barang
+   * Jika pelanggan membatalkan pembelian suatu barang, pelanggan dapat menghapus barang tersebut:
         * hapus satu baris 
         * reset semua transaksi
-   d). Jika pelanggan sudah selesai membeli, namun masih ragu apakah 
-   * Jika pelanggan sudah selesai membeli, namun masih ragu apakah 
-       harga barang dan nama     yang dimasukkan sudah benar, 
-       pelanggan dapat memeriksa pesanan dengan output sebagai 
-       berikut:
-@@ -64,7 +62,11 @@ Proyek ini bertujuan untuk membuat sistem kasir supermarket dengan alur sebagai
-        * Mengeluarkan pesan “Ada kesalahan input data” jika terjadi 
-          kesalahan input.
-        * Menampilkan tabel yang berisi semua data pesanan.
+          
+   d). Jika pelanggan sudah selesai membeli
+   
+   *Menampilkan tabel yang berisi semua data pesanan
+
+   e). Jika pelanggan mengalami kesalahan dalam memasukkan nama belanja, Pelanggan dapat memeriksa dengan ditampilkan pesan error
+   
+   *Mengeluarkan pesan error* :
+   
+   "Type data yang dimasukkan tidak sesuai dengan keranjang", 
     
-       #test case dalam pengoperasian code**
-     ## Test Case 1 
+   "Nilai yang dimasukkan bukan integer dan tidak sesuai", 
+    
+   "Transaksi dibatalkan, daftar belanja berhasil dihapus". 
+      
+        Dalam hal ini berguna untuk pengecekan kembali agar menegtahui kesalahannya.
+
 
 **Input:**<br />
+ ## Test Case 1
 **menambahkan item belanja ke dalam keranjang**
 
 trsnct_123.add_item("Beras", 10, 15_000)
@@ -96,7 +98,7 @@ trsnct_123.check_keranjang()
  ## Test Case 2
 
 **Input:**<br />
-**mengubah nama belanja** 
+**Mengubah/memperbarui nama belanja setelah mengalami pengupdate an** 
 
 trsnct_123.update_item_nama_belanja("susu", "kopi")
 
@@ -108,7 +110,7 @@ trsnct_123.check_keranjang()
 
 **Input:**<br />
 ##  Test case 3
-**mengubah/memperbarui nama belanja dengan string**
+**Mengubah/memperbarui nama belanja dengan string**
 
 trsnct_123.update_item_nama_belanja("kopi", 15)
 
@@ -119,7 +121,7 @@ trsnct_123.check_keranjang()
 
 **Input:**<br />
 ## Test case 4
-**Mengubah/memperbarui jumlah belanja**
+**Mengubah/memperbarui jumlah belanja setelah mengalami pengupdate an**
 
 trsnct_123.update_item_jumlah_belanja("gula", 9)
 
