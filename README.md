@@ -83,3 +83,6 @@ Proyek ini bertujuan untuk membuat sistem kasir supermarket dengan alur sebagai 
         * Mengeluarkan pesan “Ada kesalahan input data” jika terjadi 
           kesalahan input.
         * Menampilkan tabel yang berisi semua data pesanan.
+    
+       #test case dalam pengoperasian code**
+     
