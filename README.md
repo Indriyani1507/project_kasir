@@ -9,41 +9,31 @@ Sehingga customer yang tidak berada di kota tersebut bisa membeli barang dari su
 1. Customer memasukkan nama belanja, jumlah belanja, harga belanja per item yang akan dibeli
 * Customer memasukkan nama item, jumlah item, harga per item yang 
    ingin dibeli
-2. Jika customer sudah selesai berbelanja, dengan ketentuan nama belanja, jumlah belanja, dan harga belanja yang diinput sudah benar. Maka customer bisa melakukan check order.
-   Menggunakan method check_keranjang()
-     dengan ketentuan :
-* Jika customer sudah selesai dengan belanjanya, apabila nama belanja, jumlah belanja, dan harga belanja yang diinput sudah benar.
-* Maka customer bisa melakukan check order. Menggunakan method check_keranjang()
-* 
-    b). Jika terdapat kesalahan input maka akan mengeluarkan pesan 
-    * Jika terdapat kesalahan input maka akan mengeluarkan pesan 
-        “terdapat kesalahan input data” dan bisa melakukan update item
+2. Jika customer sudah selesai berbelanja, dengan ketentuan nama belanja, jumlah belanja, dan harga belanja yang diinput sudah benar.
+  Maka customer bisa melakukan check order.
+  Menggunakan method `check_keranjang()`
+  
+3. Jika terjadi kesalahan pada saat customer memasukkan nama belanja.
+   Maka customer bisa melakukan update nama belanja dengan method : `update_item_nama_belanja()`
 
-3. Jika terjadi kesalahan pada saat customer memasukkan nama belanja,   
-* Jika terjadi kesalahan pada saat customer memasukkan nama belanja,   
-   jumlah belanja, atau harga belanja per item tetapi tidak ingin menghapus 
-   itemnya, maka customer dapat melakukan update :
-   a). Update nama belanja dengan method :
-   * Update nama item dengan method :
-       update_item_nama_belanja
-   b). Update jumlah item dengan method :
-   * Update jumlah item dengan method :
-       update_item_jumlah_belanja
-   c). Update harga per item dengan method :
-   * Update harga per item dengan method :
-       update_item_harga_belanja
+4. Jika terjadi kesalahan pada saat customer memasukkan jumlah belanja.
+   Maka customer bisa melakukan update jumlah belanja dengan method : `update_item_jumlah_belanja()`
 
-4.  Jika customer ingin membatalkan transaksi maka bisa melakukan :
-   a). Menghapus salah satu item dari nama belanja dengan method
-      self.keranjang.remove(item)
-* Jika customer ingin menghapus semua daftar belanja maka bisa melakukan :
-   * Menghapus semua item  dengan method
-        self.keranjang.clear()
+5. Jika terjadi kesalahan pada saat customer memasukkan harga belanja.
+   Maka customer bisa melakukan update harga belanja dengan method : `update_item_harga_belanja()`
+
+6.  Jika customer ingin membatalkan transaksi maka bisa melakukan :
+   
+   a). Menghapus daftar belanja dari nama belanja dengan method
+      `delete_item()`
+    
+   * Jika customer ingin menghapus semua daftar belanja maka bisa melakukan :
+        `self.keranjang.clear()`
 
    b). Jika ingin menghapus semua transaksi maka dapat menggunakan 
    * Jika ingin menghapus semua transaksi maka dapat menggunakan 
        method
-      reset_transaction()
+      `reset_transaction()`
 
 5. Setelah selesai melakukan pengecekan,customer dapat menghitung total belanja yang sudah dibeli. Dengan menggunakan method total_harga(). Pada supermarket ini terdapat ketentuan :
    a). Jika total belanja customer diatas Rp 200.000 maka akan 
