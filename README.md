@@ -52,10 +52,23 @@ Sehingga customer yang tidak berada di kota tersebut bisa membeli barang dari su
       Membuat kelas transaksi untuk menghimpun data transaksi dan membuat fungsi/method sehingga menghasilkan objek
    2. `add_item()`
       Digunakan untuk menambahkan nama belanja, jumlah belanja dan harga belanja per item
-   3. `update_item`
+   3. `update_item()`
       Digunakan untuk mengupdate/memperbarui isi keranjang
-   4. `update_item_nama_belanja`
-      Digunakan untuk memperbarui nama belanja didalam keranjang belanja 
+   4. `update_item_nama_belanja()`
+      Digunakan untuk memperbarui/mengganti salah satu nama belanja 
+   5. `update_item_jumlah_belanja()`
+      Digunakan untuk memperbarui/mengganti salah satu jumlah belanja
+   6. `update_item_harga_belanja()`
+      Digunakan untuk memperbarui/mengganti harga belanja
+   7. `delete_item()`
+      Digunakan untuk menghapus daftar belanja didalam keranjang
+   8. `reset_keranjang()`
+      Digunakan untuk menghapus semua daftar belanja dalam keranjang
+   9. `cek_keranjang`
+       Digunakan untuk menghitung isi keranjang
+   10. `total_price()`
+       Digunakan untuk untuk menghitung total belanja dari daftar keranjang
+      
    
 
 ## Objectif :
