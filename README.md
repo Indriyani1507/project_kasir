@@ -6,7 +6,10 @@ Sehingga customer yang tidak berada di kota tersebut bisa membeli barang dari su
 ---
 
 ## Requirements :
-1. Customer memasukkan nama belanja, jumlah belanja, harga belanja per item yang akan dibeli
+1. Customer membuat ID Transaksi sebagai berikut :
+   
+   Dengan membuat objek dari data kelas trnsct_123 = `Transaction`
+3. Customer memasukkan nama belanja, jumlah belanja, harga belanja per item yang akan dibeli
 * Customer memasukkan nama item, jumlah item, harga per item yang 
    ingin dibeli
 2. Jika customer sudah selesai berbelanja, dengan ketentuan nama belanja, jumlah belanja, dan harga belanja yang diinput sudah benar.
