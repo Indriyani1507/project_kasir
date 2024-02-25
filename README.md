@@ -41,6 +41,23 @@ Sehingga customer yang tidak berada di kota tersebut bisa membeli barang dari su
    
       c). Jika total belanja lebih dari Rp 500.000 maka akan mendapatkan diskon 10%
 
+
+   ## Flowchart
+
+   ![image](https://github.com/Indriyani1507/project_kasir/blob/main/flowchart_kasir.jpg)
+
+
+   ## Penggunaan Method
+   1. `Transaction()`
+      Membuat kelas transaksi untuk menghimpun data transaksi dan membuat fungsi/method sehingga menghasilkan objek
+   2. `add_item()`
+      Digunakan untuk menambahkan nama belanja, jumlah belanja dan harga belanja per item
+   3. `update_item`
+      Digunakan untuk mengupdate/memperbarui isi keranjang
+   4. `update_item_nama_belanja`
+      Digunakan untuk memperbarui nama belanja didalam keranjang belanja 
+   
+
 ## Objectif :
 Proyek ini bertujuan untuk membuat sistem kasir supermarket dengan alur sebagai berikut:
 
